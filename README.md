@@ -34,7 +34,7 @@ THEN I find a concise, descriptive title
 
 ### Semantic HTML Elements
 
-At the start of the project, the majority of the code was sectioned with only <div> elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preference.
+At the start of the project, the majority of the code was sectioned with only \<div> elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preference.
 
 ```html
     <section class="search-engine-optimization">
@@ -95,4 +95,13 @@ The header elements seemed to be mostly in a fitting order throughout the docume
 .footer h4 {
     font-size: 20px;
 }
+```
+
+
+### Descriptive Title
+
+The orginal code was missing a good title, so I filled in what I thought would be fitting for the page.
+
+```html
+<title>Horiseon</title>
 ```
