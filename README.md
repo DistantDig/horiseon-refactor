@@ -2,7 +2,7 @@
 
 ## Description 
 
-This repository was designed to refactor previously existing code to be cleaner and more orginized without changing the function or the user's view of the page. This refactor cleans up the code for the (Fictional) company of Horiseon. The point of this project was to excercise fundamental html and css concepts by searching for and correcting any mistakes in the source code.
+This repository was designed to refactor previously existing code to be cleaner and more organized without changing the function or the user's view of the page. This refactor cleans up the code for the (Fictional) company of Horiseon. The point of this project was to exercise fundamental html and css concepts by searching for and correcting any mistakes in the source code.
 
 
 ## The User Story
@@ -32,16 +32,45 @@ THEN I find a concise, descriptive title
 
 ## Changes To Meet The Acceptance Criteria 
 
-### Semantic HTML Elemnts
+### Semantic HTML Elements
 
-At the start of the porject, the majority of the code was sectioned with only &ltdiv$gt elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preferance.
+At the start of the project, the majority of the code was sectioned with only &ltdiv$gt elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preference.
 
 ```html
-        <section class="search-engine-optimization">
-            <img src="./assets/images/search-engine-optimization.jpg" alt="Notepad on a desk" class="float-left" />
-            <h2>Search Engine Optimization</h2>
-            <p>
-                The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
-            </p>
-        </section>
+    <section class="search-engine-optimization">
+        <img src="./assets/images/search-engine-optimization.jpg" alt="Notepad on a desk" class="float-left" />
+        <h2>Search Engine Optimization</h2>
+        <p>
+            The dominance of mobile internet use means that users are searching for the right business as they travel, shop, or sit on their couch at home. Search Engine Optimization (SEO) allows you to increase your visibility and find the right customers for your business.
+        </p>
+    </section>
+
+    <section id="online-reputation-management" class="online-reputation-management">
+        <img src="./assets/images/online-reputation-management.jpg" alt="Laptop displaying reputation graph" class="float-right" />
+        <h2>Online Reputation Management</h2>
+        <p>
+            The web is full of opinions, and some of these can be negative. Social media allows anyone with an internet connection to say whatever they want about your business. Online Reputation Management gives you the control over what potential customers see when they search for your business.
+        </p>
+    </section>
+```
+
+### Logical Structure
+
+I created spacing for the HTML page for easier readability as well as organized the CSS file into categories that I thought would make sense. I also added comments to label these categories, and organized them in a similar flow to the HTML file.
+
+```css
+/* Main */
+
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.search-engine-optimization h2,
+.online-reputation-management h2,
+.social-media-marketing h2 {
+    margin-bottom: 20px;
+    font-size: 36px;
+}
 ```
