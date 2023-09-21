@@ -34,7 +34,7 @@ THEN I find a concise, descriptive title
 
 ### Semantic HTML Elements
 
-At the start of the project, the majority of the code was sectioned with only &ltdiv$gt elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preference.
+At the start of the project, the majority of the code was sectioned with only <div> elements. I instead went through and renamed all of these elements to reflect the code contained within. With this I also created more spacing within the code for easier readability, although this may simply be a personal preference.
 
 ```html
     <section class="search-engine-optimization">
@@ -72,5 +72,27 @@ I created spacing for the HTML page for easier readability as well as organized 
 .social-media-marketing h2 {
     margin-bottom: 20px;
     font-size: 36px;
+}
+```
+
+
+### Accessible Alt Attributes
+
+Each image seemed to be missing an alt attribute, and so I went through and provided a short description to serve as one. This would include each major image as well as shorter icons found on the page.
+
+```html
+<img src="./assets/images/search-engine-optimization.jpg" alt="Notepad on a desk" class="float-left" />
+```
+
+### Headers In Sequential Order
+
+The header elements seemed to be mostly in a fitting order throughout the document, but I did find it odd that the footer's header was using an h2 element. I instead changed it to use h4, and ensured that the text remained the same size through the CSS file.
+
+```html
+<h4>Made with ❤️️ by Horiseon</h4>
+```
+```css
+.footer h4 {
+    font-size: 20px;
 }
 ```
